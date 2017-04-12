@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+
+
+  <TextView
+      android:id="@+id/textView16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="29dp"
+      android:layout_marginStart="29dp"
+      android:layout_marginTop="66dp"
+      android:text="Name"
+      android:textAppearance="@style/TextAppearance.AppCompat"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:visibility="visible" />
+
+  <EditText
+      android:id="@+id/nameText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:layout_alignBottom="@+id/textView16"
+      android:layout_toRightOf="@+id/textView19"
+      android:layout_toEndOf="@+id/textView19"
+      android:layout_marginLeft="10dp"
+      android:layout_marginStart="10dp" />
+
+  <TextView
+      android:id="@+id/textView17"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/textView16"
+      android:layout_alignStart="@+id/textView16"
+      android:layout_below="@+id/nameText1"
+      android:layout_marginTop="69dp"
+      android:text="E-mail"
+      android:textAppearance="@style/TextAppearance.AppCompat"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:visibility="visible" />
+
+  <EditText
+      android:id="@+id/emailText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@+id/textView17"
+      android:layout_alignLeft="@+id/nameText1"
+      android:layout_alignStart="@+id/nameText1"
+      android:ems="10"
+      android:inputType="textEmailAddress" />
+
+  <TextView
+      android:id="@+id/textView18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/textView17"
+      android:layout_alignStart="@+id/textView17"
+      android:layout_below="@+id/textView17"
+      android:layout_marginTop="74dp"
+      android:text="Phone"
+      android:textAppearance="@style/TextAppearance.AppCompat"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:visibility="visible" />
+
+  <EditText
+      android:id="@+id/phoneText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/emailText1"
+      android:layout_alignStart="@+id/emailText1"
+      android:layout_below="@+id/emailText1"
+      android:layout_marginTop="60dp"
+      android:ems="10"
+      android:inputType="phone" />
+
+  <TextView
+      android:id="@+id/textView19"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Password"
+      android:textAppearance="@style/TextAppearance.AppCompat"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:visibility="visible"
+      android:layout_alignBottom="@+id/passwordText1"
+      android:layout_alignLeft="@+id/textView18"
+      android:layout_alignStart="@+id/textView18" />
+
+  <EditText
+      android:id="@+id/passwordText1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:ems="10"
+      android:inputType="textPassword"
+      android:layout_below="@+id/phoneText1"
+      android:layout_alignLeft="@+id/phoneText1"
+      android:layout_alignStart="@+id/phoneText1" />
+
+  <Button
+      android:id="@+id/registerBuyer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="11dp"
+      android:layout_marginStart="11dp"
+      android:onClick="onRegisterBuyer"
+      android:text="Register Buyer"
+      android:layout_below="@+id/textView19"
+      android:layout_toRightOf="@+id/textView17"
+      android:layout_toEndOf="@+id/textView17"
+      android:layout_marginTop="25dp" />
+</RelativeLayout>
